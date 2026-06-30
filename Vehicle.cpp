@@ -50,7 +50,7 @@ private:
     float hourlyRate = 10.0; // Hourly rate for buses
 public:
     Bus(string newPlate = "", string newType = "", string newSize = "") : Vehicle(newPlate, newType, newSize) {}
-    float getHourlyRate() {
+    float getHourlyRate() override {
         return hourlyRate;
     }
 };
@@ -60,7 +60,7 @@ private:
     float hourlyRate = 5.0; // Hourly rate for cars
 public:
     Car(string newPlate = "", string newType = "", string newSize = "") : Vehicle(newPlate, newType, newSize) {}
-    float getHourlyRate() {
+    float getHourlyRate() override {
         return hourlyRate;
     }
 };
@@ -70,7 +70,7 @@ private:
     float hourlyRate = 10.0; // Hourly rate for trucks
 public:
     Truck(string newPlate = "", string newType = "", string newSize = "") : Vehicle(newPlate, newType, newSize) {}
-    float getHourlyRate() {
+    float getHourlyRate() override {
         return hourlyRate;
     }
 };
@@ -80,7 +80,7 @@ private:
     float hourlyRate = 5.0; // Hourly rate for vans
 public:
     Van(string newPlate = "", string newType = "", string newSize = "") : Vehicle(newPlate, newType, newSize) {}
-    float getHourlyRate() {
+    float getHourlyRate() override {
         return hourlyRate;
     }
 };
@@ -90,7 +90,7 @@ private:
     float hourlyRate = 2.0; // Hourly rate for motorcycles
 public:
     Motorcycle(string newPlate = "", string newType = "", string newSize = "") : Vehicle(newPlate, newType, newSize) {}
-    float getHourlyRate() {
+    float getHourlyRate() override {
         return hourlyRate;
     }
 };
