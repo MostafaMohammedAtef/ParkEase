@@ -17,4 +17,5 @@ public:
   void occupy();
   void free();
   bool checkAvailability();
+  int getSlotNumber();
 };

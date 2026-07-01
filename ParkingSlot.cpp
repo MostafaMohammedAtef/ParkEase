@@ -10,3 +10,7 @@ ParkingSlot::ParkingSlot(int newSlotNumber, string newSize, bool newIsAvailable)
 void ParkingSlot::occupy() { isAvailable = false; }
 void ParkingSlot::free() { isAvailable = true; }
 bool ParkingSlot::checkAvailability() { return isAvailable; }
+int ParkingSlot::getSlotNumber()
+{
+    return slotNumber;
+}
